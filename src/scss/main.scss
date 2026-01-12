@@ -22,21 +22,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.button {
+button {
   margin-left: 50px;
   margin-top: 50px;
 }
 
-.btn-content {
+.btn-like {
   display: inline-flex;
   padding: 10px 20px;
   align-items: center;
   gap: 10px;
-  border-radius: 19px;
+  border-radius: 25px;
   border: 2px solid #f00;
   display: inline-flex;
   background-color: white;
   color: #f00;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 i {
@@ -45,15 +48,18 @@ i {
   line-height: 18px;
 }
 
-.button-title {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-}
-
 .count {
   color: #000;
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
+}
+
+.btn-like.clicked {
+  color: white;
+  background: #f00;
+}
+
+.btn-like.clicked .count {
+  color: white;
 }
